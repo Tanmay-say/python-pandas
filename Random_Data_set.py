@@ -15,5 +15,5 @@ df = pd.DataFrame(dict)
 # Save the DataFrame to a CSV file
 df.to_csv('students_data1.csv', index=False)
 
-
-print(df)
+print(df.head(7))
+print(df.describe()) 
