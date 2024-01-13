@@ -18,5 +18,5 @@ df2 = pd.DataFrame(dict2 )
 
 df3 = pd.concat([df1,df2],ignore_index= True)   #append not working so concat is used
 
-
+df3 = df3.fillna('*')
 print(df3)
