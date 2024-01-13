@@ -9,4 +9,5 @@ dict = {
 }
 
 df = pd.DataFrame(dict)
+
 print(df)
