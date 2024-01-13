@@ -16,7 +16,16 @@ dict2 = {
 }
 df2 = pd.DataFrame(dict2 )
 
-df3 = pd.concat([df1,df2],ignore_index= True)   #append not working so concat is used
+country = ["India " , "Africa" , "Usa" , "Uk" ]
+dict3 = {
+    "Country"  : [random.choice(country) for _ in range(10)],
+}
+df4 = pd.DataFrame(dict3 )
 
-df3 = df3.fillna('*')
+
+
+
+df3 = pd.concat([df1,df2,df4],ignore_index= True)   #append not working so concat is used
+
+df3 = df3.fillna('////')
 print(df3)
