@@ -14,3 +14,10 @@ df = pd.DataFrame(dict )
 
 high_marks_students = df[df['Marks'] > 80]
 print(high_marks_students)
+
+print("-----------------------------------------------------------------------------------")
+
+# Remove duplicate rows
+df_no_duplicates = df.drop_duplicates()
+
+print(df_no_duplicates)
