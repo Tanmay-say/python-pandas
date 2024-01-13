@@ -10,10 +10,7 @@ dict = {
 }
 
 # Create a DataFrame
-df = pd.DataFrame(dict)
+df = pd.DataFrame(dict )
 
-# Save the DataFrame to a CSV file
-df.to_csv('students_data1.csv', index=False)
-
-print(df.head(7))
-print(df.describe()) 
+high_marks_students = df[df['Marks'] > 80]
+print(high_marks_students)
